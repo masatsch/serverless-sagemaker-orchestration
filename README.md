@@ -1,6 +1,6 @@
 # Serverless SageMaker Training and Deployment Orchestration
 
-**Important Note: Step Functions now directly integrates with SageMaker [as detailed here](https://docs.aws.amazon.com/step-functions/latest/dg/connectors-sagemaker.html) rather than requiring the management around these actions through Lambda task steps.**
+**Important Note: Step Functions now directly integrates with SageMaker [as detailed here](https://docs.aws.amazon.com/step-functions/latest/dg/connectors-sagemaker.html) rather than requiring the management around these actions through Lambda task states.**
 
 [Linear regression](https://en.wikipedia.org/wiki/Linear_regression) is an approach used in machine learning to model a target variable **y** as a linear combination of a vector of explanatory variables **x** and a vector of learned weights **w**. The [Amazon SageMaker](https://aws.amazon.com/sagemaker/) machine learning platform provides a number of [built-in algorithms](https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html) to help customers get up and running training and deploying machine learning models quickly, including [Linear Learner](https://docs.aws.amazon.com/sagemaker/latest/dg/linear-learner.html) which can be used for training linear regression models.
 
