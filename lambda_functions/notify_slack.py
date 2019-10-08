@@ -2,14 +2,15 @@ import os
 import urllib
 
 
-ENABLED = os.environ['ENABLED'] # Whether to enable posting of Slack messages.
-ACCESS_TOKEN = os.environ['ACCESS_TOKEN']  # Slack OAuth access token from environment variables
+ENABLED = os.environ['ENABLED']  # Whether to enable posting of Slack messages.
+# Slack OAuth access token from environment variables
+ACCESS_TOKEN = os.environ['ACCESS_TOKEN']
 CHANNEL = os.environ['CHANNEL']  # Slack channel to post message to
 
 
 def lambda_handler(event, context):
     message = event['message']
-    if ENABLED == 'True':
+    if ENABLED == 'true':
         post_message(message)
     return event
 
